@@ -13,7 +13,8 @@ function PlantPage() {
       .then((r) => r.json())
       .then((plantsArray) => {
         setPlants(plantsArray);
-      });
+      })
+      .catch(console.log);
   }, []);
 
   function handleAddPlant(newPlant) {
